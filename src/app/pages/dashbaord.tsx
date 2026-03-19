@@ -148,7 +148,7 @@ export default function DashboardPage() {
         <div style={fadeUp(100)}><Card label="Active Members" value="214" icon="Users" color="#00FF88" /></div>
         <div style={fadeUp(200)}><Card label="Expired Members" value="38" icon="CircleAlert" color="#FF4466" /></div>
         <div style={fadeUp(300)}><Card label="Checked In Today" value="47" icon="UserCheck" color="#4488FF" /></div>
-        <div style={fadeUp(400)}><Card label="Revenue This Month" value="$5,214" icon="Wallet" color="#050505ff" /></div>
+        <div style={fadeUp(400)}><Card label="Revenue This Month" value="$5,214" icon="Wallet" color="#FFAA00" /></div>
       </div>
 
     </div>
