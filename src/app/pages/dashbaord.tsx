@@ -4,6 +4,7 @@ import "tailwindcss/tailwind.css";
 import "./index.css"
 import Card from "../components/maincard";
 import { useEffect, useState } from "react";
+import { Clock, Search } from 'lucide-react';
 
 export default function DashboardPage() {
   // Track whether the page has mounted for animation
@@ -149,6 +150,98 @@ export default function DashboardPage() {
         <div style={fadeUp(200)}><Card label="Expired Members" value="38" icon="CircleAlert" color="#FF4466" /></div>
         <div style={fadeUp(300)}><Card label="Checked In Today" value="47" icon="UserCheck" color="#4488FF" /></div>
         <div style={fadeUp(400)}><Card label="Revenue This Month" value="$5,214" icon="Wallet" color="#FFAA00" /></div>
+      </div>
+      <div
+        style={{
+          display: "inline-flex",
+          flexDirection: "row",
+          width: 1644,
+          height: 432,
+          gap: 20,
+        }}
+      >
+    {/* ── Recent Check-Ins ── */}
+      <div
+        style={{
+          display: "inline-flex",
+          flexDirection: "column",
+          width: 812,
+          height: 432,
+          gap: 1,
+          backgroundColor: "#13151B",
+          borderRadius: 20,
+          paddingTop: 20,
+          paddingLeft: 20,
+          paddingRight: 20,
+          ...fadeUp(500),
+        }}
+      >
+        <div
+        style={{
+          display: "inline-flex",
+          flexDirection: "row",
+          width: 770,
+          height: 17,
+          justifyContent: "space-between",
+        }}
+      >
+        <span
+            style={{
+              color: "#F0F1F5",
+              fontSize: 14,
+              fontFamily: "Syne, sans-serif",
+              fontWeight: 600,
+              wordBreak: "normal",
+            }}
+          >
+            Recent Check-Ins
+          </span>
+
+          <Clock size={16} color="#7A7F96" strokeWidth={2} />
+      </div>
+      </div>
+      {/* ── Member Search ── */}
+      <div
+        style={{
+          display: "inline-flex",
+          flexDirection: "column",
+          width: 812,
+          height: 432,
+          gap: 1,
+          backgroundColor: "#13151B",
+          borderRadius: 20,
+          paddingTop: 20,
+          paddingLeft: 20,
+          paddingRight: 20,
+          ...fadeUp(550),
+        }}
+      >
+        <div
+        style={{
+          display: "inline-flex",
+          flexDirection: "row",
+          width: 770,
+          height: 17,
+          justifyContent: "space-between",
+        }}
+      >
+        <span
+            style={{
+              color: "#F0F1F5",
+              fontSize: 14,
+              fontFamily: "Syne, sans-serif",
+              fontWeight: 600,
+              wordBreak: "normal",
+            }}
+          >
+            Member Search
+          </span>
+
+          <Search size={16} color="#7A7F96" strokeWidth={2} />
+      </div>
+      </div>
+      
+       
       </div>
 
     </div>
