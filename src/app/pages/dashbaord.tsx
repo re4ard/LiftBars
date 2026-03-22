@@ -1,6 +1,6 @@
 "use client";
 
-import "tailwindcss/tailwind.css";
+
 import "./index.css"
 import Card from "../components/maincard";
 import { useEffect, useState } from "react";
@@ -160,6 +160,17 @@ export default function DashboardPage() {
           gap: 20,
         }}
       >
+  {/* ── Information── */}
+      <div
+        style={{
+          display: "inline-flex",
+          flexDirection: "row",
+          width: 1644,
+          height: 432,
+          gap: 20,
+          ...fadeUp(500),
+        }}
+      >
     {/* ── Recent Check-Ins ── */}
       <div
         style={{
@@ -173,7 +184,6 @@ export default function DashboardPage() {
           paddingTop: 20,
           paddingLeft: 20,
           paddingRight: 20,
-          ...fadeUp(500),
         }}
       >
         <div
@@ -207,15 +217,15 @@ export default function DashboardPage() {
           flexDirection: "column",
           width: 812,
           height: 432,
-          gap: 1,
+          gap: 16,
           backgroundColor: "#13151B",
           borderRadius: 20,
           paddingTop: 20,
           paddingLeft: 20,
           paddingRight: 20,
-          ...fadeUp(550),
         }}
       >
+    {/* ── Member Search Header ── */}
         <div
         style={{
           display: "inline-flex",
@@ -238,6 +248,36 @@ export default function DashboardPage() {
           </span>
 
           <Search size={16} color="#7A7F96" strokeWidth={2} />
+      </div>
+      {/* ── Member Search SearchBar ── */}
+        <div
+        style={{
+          display: "inline-flex",
+          flexDirection: "row",
+          gap: 8,
+          width: 770,
+          height: 39,
+          paddingTop: 10,
+          paddingBottom: 10,
+          paddingLeft: 14,
+          paddingRight: 14,
+          backgroundColor: "#1A1D26",
+          borderRadius: 12,
+        }}
+      >
+       <Search size={15} color="#7A7F96" strokeWidth={2} />
+       <input type="search" placeholder="Search members..." style={{
+        background: "transparent",
+        border: "transparent",
+        width: 717,
+        height: 17,
+        fontSize: 13,
+        fontFamily: "DM Sans, sans-serif",
+        fontWeight: 400,
+        outline: "none",
+        
+       }}></input>
+      </div>
       </div>
       </div>
       
